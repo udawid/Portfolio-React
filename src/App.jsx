@@ -1,10 +1,7 @@
-function App() {
+import Navbar from "./components/navbar";
 
-  return (
-    <div>
-      Hello world!
-    </div>
-  )
+function App() {
+  return <Navbar />;
 }
 
-export default App
+export default App;
