@@ -1,4 +1,5 @@
 import logo from '../logo.svg'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -6,12 +7,8 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="App-logo" />
             <h1>Dawid Urbaniak</h1>
             <div className="links">
-                <a href="/">home</a>
-                <a href="/create" style={{
-                    borderRadius: "8px",
-                    color: "white",
-                    backgroundColor: "#e2b714"
-                }}>Nowy blog</a>
+                <Link to="/">home</Link>
+                <Link to="/create">Nowy blog</Link>
             </div>
         </nav>
     );
